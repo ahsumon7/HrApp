@@ -17,6 +17,8 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.util.List;
 
+
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1/employees")
 @RequiredArgsConstructor
@@ -95,5 +97,6 @@ public class EmployeeController {
                     .body("Failed to import employees: " + e.getMessage());
         }
     }
+
 
 }

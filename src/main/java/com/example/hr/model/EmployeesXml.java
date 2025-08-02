@@ -1,12 +1,9 @@
 package com.example.hr.model;
 
-
-
-
-        import jakarta.xml.bind.annotation.XmlElement;
-        import jakarta.xml.bind.annotation.XmlRootElement;
-        import java.util.List;
-
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import java.util.List;
+//comment
 @XmlRootElement(name = "employees")
 public class EmployeesXml {
     private List<EmployeeXml> employees;
@@ -19,4 +16,6 @@ public class EmployeesXml {
     public void setEmployees(List<EmployeeXml> employees) {
         this.employees = employees;
     }
+
+
 }

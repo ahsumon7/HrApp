@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
-    // Find employee by exact employeeId
+    // Find employee by exact empl
     Optional<Employee> findByEmployeeId(String employeeId);
 
     // Search employees by partial first or last name (case-insensitive)
